@@ -24,3 +24,10 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle shadowJar
       run: ./gradlew shadowJar
+    - name: Upload artifact
+      uses: actions/upload-artifact@v1.0.0
+      with:
+        # Artifact name
+       name: DidIAsk.jar
+       # Directory containing files to upload
+       path: /build/libs/untitled-1.0-SNAPSHOT.jar
