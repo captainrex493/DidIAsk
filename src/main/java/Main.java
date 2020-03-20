@@ -52,15 +52,15 @@ public class Main extends ListenerAdapter {
                 event.getMessage().delete().queue();
             }
             
-             else if ((event.getMember().getId().equals("207686242874294272") && ran.nextInt(100) < 50) && (System.currentTimeMillis() - karthik_time) > 30000) {
+             else if ((event.getMember().getId().equals("207686242874294272") && ran.nextInt(100) < 25) && (System.currentTimeMillis() - karthik_time) > 30000) {
                 channel.sendMessage("did I ask?").queue();
                 this.karthik_time = System.currentTimeMillis();
             }
-            else if ((event.getMember().getId().equals("243904796501868555") && ran.nextInt(100) < 150) && (System.currentTimeMillis() - arvin_time) > 30000) {
-                channel.sendMessage("this person is banned from using powertools").queue();
-                this.arvin_time = System.currentTimeMillis();
-            }
-            else if (ran.nextInt(100) < 10) {
+            // else if ((event.getMember().getId().equals("243904796501868555") && ran.nextInt(100) < 150) && (System.currentTimeMillis() - arvin_time) > 30000) {
+            //     channel.sendMessage("this person is banned from using powertools").queue();
+            //     this.arvin_time = System.currentTimeMillis();
+            // }
+            else if (ran.nextInt(100) < 5) {
                 channel.sendMessage("did I ask?").queue();
             }
             
